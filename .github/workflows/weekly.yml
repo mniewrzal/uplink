@@ -21,3 +21,7 @@ jobs:
 
       - name: Bump dependencies
         run: make bump-dependencies
+      
+      - name: Create Pull Request
+        id: cpr
+        uses: peter-evans/create-pull-request@v7
