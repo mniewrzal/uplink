@@ -25,3 +25,6 @@ jobs:
       - name: Create Pull Request
         id: cpr
         uses: peter-evans/create-pull-request@v7
+        with:
+          title: "go.mod: bump dependencies"
+          branch: update-dependencies
